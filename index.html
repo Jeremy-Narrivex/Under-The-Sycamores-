@@ -230,6 +230,49 @@
     .mission-grid{grid-template-columns:1fr;}
   }
 
+  /* ---------- HOSTS ---------- */
+  .hosts{
+    background:var(--paper);
+    padding:100px 0 96px;
+  }
+  .hosts-grid{
+    margin-top:56px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:56px;
+  }
+  .host-card{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+  }
+  .host-photo{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid var(--bark-pale);
+    margin-bottom:24px;
+  }
+  .host-card h3{
+    font-size:24px;
+    margin-bottom:4px;
+  }
+  .host-role{
+    font-size:11.5px;
+    color:var(--rust);
+    margin-bottom:16px;
+  }
+  .host-card p{
+    margin:0;
+    font-size:15px;
+    color:#3A342A;
+    max-width:54ch;
+  }
+  @media (max-width:760px){
+    .hosts-grid{grid-template-columns:1fr;}
+  }
+
   /* ---------- BLUEPRINT / TIMELINE ---------- */
   .blueprint{
     background:var(--paper);
@@ -422,6 +465,31 @@
         <div>
           <h3>Tone</h3>
           <p>Grounded, analytical, and persistent &mdash; a father-daughter partnership, respectful of the people at the center of every case, and objective about the institutions that failed them.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hosts">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="label mono">Who's Behind the Mic</div>
+          <h2>A father-daughter investigation, told from two angles.</h2>
+        </div>
+      </div>
+      <div class="hosts-grid">
+        <div class="host-card">
+          <img class="host-photo" src="/assets/jeremy-host.jpg" alt="Jeremy, co-host of Under the Sycamores">
+          <h3>Jeremy</h3>
+          <div class="host-role mono">Co-Host &amp; Lead Analyst</div>
+          <p>With over 12 years of experience as an engineering technician in civil construction, Jeremy brings a rigorous, data-driven approach to Under the Sycamores. Rather than coming from a traditional journalism background, he relies on mathematical logic, structural data analysis, and technical literacy to dissect case files. A lifelong Midwest resident with a deep familiarity with the region, Jeremy turned a passion for true crime into an objective search for answers&mdash;focusing on raw facts, documented timelines, and hard evidence over speculation.</p>
+        </div>
+        <div class="host-card">
+          <img class="host-photo" src="/assets/kayla-host-placeholder.jpg" alt="Kayla, co-host of Under the Sycamores">
+          <h3>Kayla</h3>
+          <div class="host-role mono">Co-Host &amp; Digital Researcher</div>
+          <p>Born and raised in Kentucky, Kayla brings a compassionate, human-centered lens to Under the Sycamores. Currently studying cybersecurity, she combines digital investigative skills with a deep understanding of how modern cases unfold online. While analyzing raw data and official records is essential, Kayla ensures the show never loses sight of the human stories behind the files&mdash;focusing on victim advocacy, empathetic storytelling, and a fresh perspective on the Ohio Valley's cold cases.</p>
         </div>
       </div>
     </div>
